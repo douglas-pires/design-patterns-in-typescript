@@ -1,0 +1,120 @@
+{
+  "env": {
+    "es6": true,
+    "node": true
+  },
+  "root": true,
+  "parser": "@typescript-eslint/parser",
+  "plugins": ["@typescript-eslint", "unused-imports", "import"],
+  "extends": [
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:import/typescript"
+  ],
+
+  "parserOptions": {
+    "project": "tsconfig.json",
+    "sourceType": "module"
+  },
+  "ignorePatterns": ["next.config.js"],
+  "overrides": [
+    {
+      "files": ["*.ts", "**/*.ts", "*.sql", "**/*.sql", "*/**/*.tsx"],
+      "rules": {
+        "padding-line-between-statements": [
+          "error",
+          {
+            "blankLine": "always",
+            "prev": "directive",
+            "next": "*"
+          },
+          {
+            "blankLine": "any",
+            "prev": "directive",
+            "next": "directive"
+          },
+          {
+            "blankLine": "always",
+            "prev": "import",
+            "next": "*"
+          },
+          {
+            "blankLine": "any",
+            "prev": "import",
+            "next": "import"
+          },
+          {
+            "blankLine": "always",
+            "prev": "*",
+            "next": ["const", "let", "var", "export"]
+          },
+          {
+            "blankLine": "always",
+            "prev": ["const", "let", "var", "export"],
+            "next": "*"
+          },
+          {
+            "blankLine": "any",
+            "prev": ["const", "let", "var", "export"],
+            "next": ["const", "let", "var", "export"]
+          },
+          {
+            "blankLine": "always",
+            "prev": "*",
+            "next": ["if", "class", "for", "do", "while", "switch", "try"]
+          },
+          {
+            "blankLine": "always",
+            "prev": ["if", "class", "for", "do", "while", "switch", "try"],
+            "next": "*"
+          },
+          {
+            "blankLine": "always",
+            "prev": "*",
+            "next": "return"
+          }
+        ],
+        "@typescript-eslint/lines-between-class-members": [
+          "error",
+          "always",
+          {
+            "exceptAfterOverload": true,
+            "exceptAfterSingleLine": true
+          }
+        ],
+        "no-useless-escape": "warn",
+        "@typescript-eslint/no-unused-vars": "off",
+        "unused-imports/no-unused-imports": "error",
+        "import/order": [
+          "error",
+          {
+            "groups": ["builtin", "external", "internal"],
+            "pathGroups": [
+              {
+                "pattern": "react",
+                "group": "external",
+                "position": "before"
+              }
+            ],
+            "pathGroupsExcludedImportTypes": ["react"],
+            "newlines-between": "always",
+            "alphabetize": {
+              "order": "asc",
+              "caseInsensitive": true
+            }
+          }
+        ],
+        "unused-imports/no-unused-vars": [
+          "warn",
+          {
+            "vars": "all",
+            "varsIgnorePattern": "^_",
+            "args": "after-used",
+            "argsIgnorePattern": "^_",
+            "ignoreRestSiblings": true
+          }
+        ]
+      }
+    }
+  ]
+}
