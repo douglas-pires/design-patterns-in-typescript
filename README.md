@@ -15,3 +15,7 @@ This repository contains a collection of design patterns implemented in TypeScri
 
 - [x] [Adapter](https://github.com/douglas-pires/design-patterns-in-typescript/blob/main/src/structural-patterns/adapter)
 - [x] [Strategy](https://github.com/douglas-pires/design-patterns-in-typescript/blob/main/src/structural-patterns/strategy)
+
+### Something is wrong?
+
+Please, do not hesitate to open an issue or a pull request if you find something wrong or if you want to add a new pattern. Contributions are always welcome!
