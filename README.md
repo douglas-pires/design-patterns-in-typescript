@@ -10,6 +10,7 @@ This repository contains a collection of design patterns implemented in TypeScri
 - [x] [Builder](https://github.com/douglas-pires/design-patterns-in-typescript/blob/main/src/criational-patterns/builder)
 - [x] [Factory Method](https://github.com/douglas-pires/design-patterns-in-typescript/blob/main/src/criational-patterns/factory)
 - [x] [Singleton](https://github.com/douglas-pires/design-patterns-in-typescript/blob/main/src/criational-patterns/singleton)
+- [x] [Prototype](https://github.com/douglas-pires/design-patterns-in-typescript/blob/main/src/criational-patterns/prototype)
 
 ### Structural patterns
 
