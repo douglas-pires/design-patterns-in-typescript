@@ -19,6 +19,7 @@ This repository contains a collection of design patterns implemented in TypeScri
 - [x] [Bridge](https://github.com/douglas-pires/design-patterns-in-typescript/blob/main/src/structural-patterns/bridge)
 - [x] [Composite](https://github.com/douglas-pires/design-patterns-in-typescript/blob/main/src/structural-patterns/composite)
 - [x] [Decorator](https://github.com/douglas-pires/design-patterns-in-typescript/blob/main/src/structural-patterns/decorator)
+- [x] [Facade](https://github.com/douglas-pires/design-patterns-in-typescript/blob/main/src/structural-patterns/facade)
 
 ### Is something wrong?
 
