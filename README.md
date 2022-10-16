@@ -20,6 +20,7 @@ This repository contains a collection of design patterns implemented in TypeScri
 - [x] [Composite](https://github.com/douglas-pires/design-patterns-in-typescript/blob/main/src/structural-patterns/composite)
 - [x] [Decorator](https://github.com/douglas-pires/design-patterns-in-typescript/blob/main/src/structural-patterns/decorator)
 - [x] [Facade](https://github.com/douglas-pires/design-patterns-in-typescript/blob/main/src/structural-patterns/facade)
+- [x] [Flyweight](https://github.com/douglas-pires/design-patterns-in-typescript/blob/main/src/structural-patterns/flyweight)
 
 ### Is something wrong?
 
