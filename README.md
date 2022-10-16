@@ -22,6 +22,10 @@ This repository contains a collection of design patterns implemented in TypeScri
 - [x] [Facade](https://github.com/douglas-pires/design-patterns-in-typescript/blob/main/src/structural-patterns/facade)
 - [x] [Flyweight](https://github.com/douglas-pires/design-patterns-in-typescript/blob/main/src/structural-patterns/flyweight)
 
+### Behavioral patterns
+
+- [x] [Chain of Responsibility](https://github.com/douglas-pires/design-patterns-in-typescript/blob/main/src/behavioral-patterns/chain-of-responsibility)
+
 ### Is something wrong?
 
 Please, do not hesitate to open an issue or a pull request if you find something wrong or if you want to add a new pattern. Contributions are always welcome!
