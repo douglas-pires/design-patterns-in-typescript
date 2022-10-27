@@ -14,10 +14,10 @@ The Adapter pattern suggests that you create a new class that converts the inter
 
 You have two services. One of them returns data in XML format, the other one in SOAP format. In order to communicate with your application, you need to convert both formats to JSON.
 
-### SOAP service
-
-<https://github.com/douglas-pires/design-patterns-in-typescript/blob/d46235e6d49b4b22083beb605eddc216b7c91d42/src/structural-patterns/adapter/services/api-returning-soap.service.ts#L1-L20>
-
 ### XML service
 
 <https://github.com/douglas-pires/design-patterns-in-typescript/blob/d46235e6d49b4b22083beb605eddc216b7c91d42/src/structural-patterns/adapter/services/api-returning-xml.service.ts#L1-L15>
+
+### SOAP service
+
+<https://github.com/douglas-pires/design-patterns-in-typescript/blob/d46235e6d49b4b22083beb605eddc216b7c91d42/src/structural-patterns/adapter/services/api-returning-soap.service.ts#L1-L20>
