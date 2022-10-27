@@ -16,8 +16,8 @@ You have two services. One of them returns data in XML format, the other one in 
 
 ### XML service
 
-<https://github.com/douglas-pires/design-patterns-in-typescript/blob/0e3d5fa91f91141432f00e1c247735ca3a4c5898/src/structural-patterns/adapter/services/api-returning-xml.service.ts#L1-L15>
+<https://github.com/douglas-pires/design-patterns-in-typescript/blob/main/src/structural-patterns/adapter/services/api-returning-xml.service.ts#L1-L15>
 
 ### SOAP service
 
-<https://github.com/douglas-pires/design-patterns-in-typescript/blob/0e3d5fa91f91141432f00e1c247735ca3a4c5898/src/structural-patterns/adapter/services/api-returning-soap.service.ts#L1-L20>
+<https://github.com/douglas-pires/design-patterns-in-typescript/blob/main/src/structural-patterns/adapter/services/api-returning-soap.service.ts#L1-L20>
