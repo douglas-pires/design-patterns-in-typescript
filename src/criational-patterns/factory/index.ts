@@ -1,12 +1,21 @@
-import { transportTypes } from "./interfaces/transport.interface";
-import { TransportCreator } from "./transport.creator";
+import {
+  TransportTypes,
+  transportTypes,
+} from "./interfaces/transport.interface";
+import { TransportFactory } from "./transport.factory";
 
+/**
+ * This way we can use the factory to create different types of transports
+ * without having to know how to create them. We just need to know the type
+ * of transport we want to create.
+ */
 class Application {
+  constructor(public vehicle: TransportTypes) {}
   start(): void {
-    const train = TransportCreator.createTransport(transportTypes.train);
+    const transport = TransportFactory.createTransport(this.vehicle);
 
-    train.deliver();
+    transport.deliver();
   }
 }
 
-new Application().start();
+new Application(transportTypes.car).start();

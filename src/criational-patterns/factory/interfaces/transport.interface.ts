@@ -1,7 +1,7 @@
 export const transportTypes = {
-  ship: "Ship",
-  bus: "Bus",
-  train: "Train",
+  car: "Car",
+  truck: "Truck",
+  drone: "Drone",
 } as const;
 
 export type TransportTypes = typeof transportTypes[keyof typeof transportTypes];
