@@ -8,16 +8,22 @@ import { DroneTransport } from "./models/drone.model";
 import { TruckTransport } from "./models/truck.model";
 
 export class TransportFactory {
-  public static createTransport(transport: TransportTypes): Transport {
-    switch (transport) {
-      case transportTypes.car:
-        return new CarTransport();
-      case transportTypes.truck:
-        return new TruckTransport();
-      case transportTypes.drone:
-        return new DroneTransport();
-      default:
-        throw new Error("Transport not implemented");
+  private transportMap: Map<TransportTypes, new () => Transport>;
+
+  constructor() {
+    this.transportMap = new Map<TransportTypes, new () => Transport>();
+    this.transportMap.set(transportTypes.car, CarTransport);
+    this.transportMap.set(transportTypes.truck, TruckTransport);
+    this.transportMap.set(transportTypes.drone, DroneTransport);
+  }
+
+  public createTransport(transport: TransportTypes): Transport {
+    const TransportConstructor = this.transportMap.get(transport);
+
+    if (!TransportConstructor) {
+      throw new Error("Transport not implemented");
     }
+
+    return new TransportConstructor();
   }
 }

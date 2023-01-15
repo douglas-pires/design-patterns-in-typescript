@@ -12,7 +12,7 @@ import { TransportFactory } from "./transport.factory";
 class Application {
   constructor(public vehicle: TransportTypes) {}
   start(): void {
-    const transport = TransportFactory.createTransport(this.vehicle);
+    const transport = new TransportFactory().createTransport(this.vehicle);
 
     transport.deliver();
   }
