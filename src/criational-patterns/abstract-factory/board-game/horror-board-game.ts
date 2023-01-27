@@ -1,11 +1,9 @@
 import { HorrorBoardGame } from "./interfaces";
 
-export class ConcreteHorrorBoardGame implements HorrorBoardGame {
-  constructor(
-    public name: string,
-    public players: number,
-    public price: number
-  ) {}
+export class ConcreteHorrorBoardGame extends HorrorBoardGame {
+  constructor(name: string, players: number, price: number) {
+    super(name, players, price);
+  }
 
   scare(): void {
     throw new Error("Method not implemented.");

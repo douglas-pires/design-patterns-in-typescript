@@ -1,11 +1,9 @@
 import { FantasyBoardGame } from "./interfaces";
 
-export class ConcreteFantasyBoardGame implements FantasyBoardGame {
-  constructor(
-    public name: string,
-    public players: number,
-    public price: number
-  ) {}
+export class ConcreteFantasyBoardGame extends FantasyBoardGame {
+  constructor(name: string, players: number, price: number) {
+    super(name, players, price);
+  }
 
   crash(): void {
     throw new Error("Method not implemented.");

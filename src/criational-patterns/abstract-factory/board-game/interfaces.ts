@@ -1,15 +1,15 @@
 import { Game } from "../game.interface";
 
-export interface TerrorBoardGame extends Game {
-  panic(): void;
+export abstract class TerrorBoardGame extends Game {
+  abstract panic(): void;
 }
 
-export interface HorrorBoardGame extends Game {
-  scare(): void;
+export abstract class HorrorBoardGame extends Game {
+  abstract scare(): void;
 }
 
-export interface FantasyBoardGame extends Game {
-  crash(): void;
+export abstract class FantasyBoardGame extends Game {
+  abstract crash(): void;
 }
 
 export type BoardGame = TerrorBoardGame | HorrorBoardGame | FantasyBoardGame;

@@ -1,15 +1,15 @@
 import { Game } from "../game.interface";
 
-export interface TerrorVideoGame extends Game {
-  panic(): void;
+export abstract class TerrorVideoGame extends Game {
+  abstract panic(): void;
 }
 
-export interface HorrorVideoGame extends Game {
-  scare(): void;
+export abstract class HorrorVideoGame extends Game {
+  abstract scare(): void;
 }
 
-export interface FantasyVideoGame extends Game {
-  crash(): void;
+export abstract class FantasyVideoGame extends Game {
+  abstract crash(): void;
 }
 
 export type VideoGame = TerrorVideoGame | HorrorVideoGame | FantasyVideoGame;
