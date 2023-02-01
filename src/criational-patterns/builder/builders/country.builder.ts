@@ -1,8 +1,8 @@
 import { Country } from "../interfaces/country.interface";
 
 export class CountryBuilder {
-  constructor(private country: Partial<Country> = {}) {
-    Object.assign(this, country);
+  constructor(private readonly country: Partial<Country> = {}) {
+    Object.assign<CountryBuilder, Partial<Country>>(this, country);
   }
 
   withName(name: string): CountryBuilder {
