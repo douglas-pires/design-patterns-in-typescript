@@ -3,6 +3,5 @@ export interface YoutubeChannel {
   subscribers: number;
   addSubscriber(): void;
   removeSubscriber(): void;
-  toString(): string;
   clone(): YoutubeChannel;
 }

@@ -17,8 +17,8 @@ class Application {
 
       clonedYoutubeChannel.addSubscriber();
 
-      console.log(channel.toString());
-      console.log(clonedYoutubeChannel.toString());
+      console.log(channel.subscribers);
+      console.log(clonedYoutubeChannel.subscribers);
     }
   }
 }
