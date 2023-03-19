@@ -1,6 +1,6 @@
 export interface ParsedData {
   name: string;
-  age: number;
+  price: number;
 }
 
 export interface DataAdapter {

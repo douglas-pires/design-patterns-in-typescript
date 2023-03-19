@@ -4,21 +4,22 @@ import { ParsedData } from "./adapters/interfaces/adapter.interface";
 import { ApiReturningSoapService } from "./services/api-returning-soap.service";
 import { ApiReturningXmlService } from "./services/api-returning-xml.service";
 
+const apiReturningSoapService = new ApiReturningSoapService();
+const apiReturningXmlService = new ApiReturningXmlService();
+
+const apiReturningSoapServiceAdapter = new ApiReturningSoapServiceAdapter(
+  apiReturningSoapService
+);
+
+const apiReturningXmlServiceAdapter = new ApiReturningXmlServiceAdapter(
+  apiReturningXmlService
+);
+
 export class Client {
-  private apiReturningSoapServiceAdapter: ApiReturningSoapServiceAdapter;
-  private apiReturningXmlServiceAdapter: ApiReturningXmlServiceAdapter;
-
-  constructor() {
-    const apiReturningSoapService = new ApiReturningSoapService();
-    const apiReturningXmlService = new ApiReturningXmlService();
-
-    this.apiReturningSoapServiceAdapter = new ApiReturningSoapServiceAdapter(
-      apiReturningSoapService
-    );
-    this.apiReturningXmlServiceAdapter = new ApiReturningXmlServiceAdapter(
-      apiReturningXmlService
-    );
-  }
+  constructor(
+    private apiReturningSoapServiceAdapter: ApiReturningSoapServiceAdapter,
+    private apiReturningXmlServiceAdapter: ApiReturningXmlServiceAdapter
+  ) {}
 
   async getDataFromApiReturningSoapService(): Promise<ParsedData> {
     return await this.apiReturningSoapServiceAdapter.getData();
@@ -28,3 +29,11 @@ export class Client {
     return await this.apiReturningXmlServiceAdapter.getData();
   }
 }
+
+const client = new Client(
+  apiReturningSoapServiceAdapter,
+  apiReturningXmlServiceAdapter
+);
+
+client.getDataFromApiReturningSoapService();
+client.getDataFromApiReturningXmlService();

@@ -4,8 +4,8 @@ export class ApiReturningXmlService {
       new DOMParser().parseFromString(
         `
       <data>
-        <name>John Doe</name>
-        <age>30</age>
+        <name>Playstation 5</name>
+        <age>499</age>
       </data>
     `,
         "text/xml"

@@ -6,8 +6,8 @@ export class ApiReturningSoapService {
       <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
         <soap:Body>
           <data>
-            <name>John Doe</name>
-            <age>30</age>
+            <name>Playstation 5</name>
+            <age>499</age>
           </data>
         </soap:Body>
       </soap:Envelope>

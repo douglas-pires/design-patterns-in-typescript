@@ -15,8 +15,8 @@ export class ApiReturningSoapServiceAdapter implements DataAdapter {
      * Any algorithm to parse SOAP to JSON
      * */
     return {
-      name: "John Doe",
-      age: 30,
+      name: "Playstation 5",
+      price: 499,
     };
   }
 
@@ -29,8 +29,8 @@ export class ApiReturningSoapServiceAdapter implements DataAdapter {
       <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
         <soap:Body>
           <data>
-            <name>John Doe</name>
-            <age>30</age>
+            <name>Playstation 5</name>
+            <age>499</age>
           </data>
         </soap:Body>
       </soap:Envelope>

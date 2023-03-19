@@ -15,8 +15,8 @@ export class ApiReturningXmlServiceAdapter implements DataAdapter {
      * Any algorithm to parse XML to JSON
      * */
     return {
-      name: "John Doe",
-      age: 30,
+      name: "Playstation 5",
+      price: 499,
     };
   }
 
@@ -27,8 +27,8 @@ export class ApiReturningXmlServiceAdapter implements DataAdapter {
     return new DOMParser().parseFromString(
       `
       <data>
-        <name>John Doe</name>
-        <age>30</age>
+        <name>Playstation 5</name>
+        <age>499</age>
       </data>
     `,
       "text/xml"
